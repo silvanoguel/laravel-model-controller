@@ -9,12 +9,12 @@
                 <div class="row row-cols-5 g-3">
                     @foreach ($movies as $movie)
                         <div class="col">
-                            <div class="card">
+                            <div class="card h-100">
                                 <img src="{{ $movie->image }}" alt="">
                                 <div class="card-body">
-                                    <p class="card-title">{{ $movie->title }}</p>
-                                    <p class="card-orig-title">{{ $movie->original_title }}</p>
-                                    <p class="card-nationality">{{ $movie->nationality }}</p>
+                                    <p class="card-title fs-3">{{ $movie->title }}</p>
+                                    <p class="card-orig-title"> Original Title: {{ $movie->original_title }}</p>
+                                    <p class="card-nationality">Nationality: {{ $movie->nationality }}</p>
                                     <p class="card-date">Year: {{ $movie->date }}</p>
                                     <p class="card-vote"> Vote: {{ $movie->vote }}</p>
                                 </div>
